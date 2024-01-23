@@ -17,15 +17,29 @@ defineProps({
   <div>
     <NuxtLink
       :to="item.path"
-      class="flex items-center justify-center cursor-pointer"
+      class="flex items-center justify-center cursor-pointer montserrat"
       :class="[
         $route.name === item.name
-          ? 'bg-neutral-300/50 backdrop-blur-md text-primary-color/70 font-bold pt-2 pb-2 pl-4 pr-4 rounded-full card'
-          : 'text-primary-color/70 font-medium pt-2 pb-2 pl-4 pr-4 rounded-full',
+          ? 'bg-color-text backdrop-blur-md text-color-background font-bold pt-3 pb-3 pl-4 pr-4 rounded-full card'
+          : 'bg-color-text/50 text-color-background font-medium p-3 rounded-full',
       ]"
       :aria-label="'Go to ' + item.name + ' profile'"
     >
-      {{ item.name }}
+      <component
+        :is="item.icon"
+        class="w-5 h-5 transition-all duration-300 text-neutral-color"
+        :fontControlled="false"
+        :alt="item.name + ' logo'"
+        :aria-label="item.name + ' logo'"
+        :class="[
+        $route.name === item.name
+          ? 'mr-1'
+          : '',
+      ]
+      "
+      />
+      <span v-if="$route.name === item.name">{{ item.name }}</span>
+
     </NuxtLink>
   </div>
 </template>

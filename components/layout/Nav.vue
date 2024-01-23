@@ -1,18 +1,21 @@
 <script setup lang="ts">
-import { HomeIcon, BriefcaseIcon, UserIcon } from "@heroicons/vue/24/solid";
+import { HomeIcon, NewspaperIcon, PaperAirplaneIcon} from "@heroicons/vue/24/solid";
 
 const items = [
   {
+    name: "Article",
+    path: "/",
+    icon: NewspaperIcon,
+  },
+  {
     name: "Home",
     path: "/",
+    icon: HomeIcon,
   },
   {
-    name: "Projects",
+    name: "Send",
     path: "/",
-  },
-  {
-    name: "About",
-    path: "/",
+    icon: PaperAirplaneIcon,
   },
 ];
 </script>
@@ -23,7 +26,6 @@ const items = [
       <ItemNavBar v-for="item in items" :key="item.name" :item="item" />
     </div>
     <div>
-
     </div>
   </div>
 </template>

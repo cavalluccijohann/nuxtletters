@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800;900&display=swap');
+
+
 #__nuxt, #__layout, html, body {
   height: 100% !important;
   width: 100% !important;
@@ -20,4 +23,8 @@ html.dark {
   --color-primary: 100, 217, 138;
   --color-background: 11, 10, 10;
   --color-text: 236, 235, 232;
+}
+
+.montserrat {
+    font-family: 'Montserrat Alternates';
 }
