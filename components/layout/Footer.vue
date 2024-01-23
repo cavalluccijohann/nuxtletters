@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="w-full">
+  <div class="w-full z-20">
     <div class="w-full h-[0.5px] bg-color-text flex items-center justify-center">
       <div class="w-8 h-8 bg-color-background rounded-full flex items-center justify-center">
         <img src="/assets/logo/nuxt.png" alt="logo" class="w-7/12 h-7/12" />

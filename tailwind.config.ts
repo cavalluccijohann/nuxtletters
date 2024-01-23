@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const plugin = require('tailwindcss/plugin')
 
 function withOpacity(variableName: string) {
   return ({ opacityValue }) => {
@@ -25,7 +26,44 @@ export default {
         "color-background": withOpacity("--color-background"),
         "color-text": withOpacity("--color-text"),
       },
+      animation: {
+        movex: 'movex 3s infinite',
+      },
+      keyframes: {
+        movex: {
+          from: {
+            left: '0',
+            opacity: '0',
+          },
+          '25%': {
+            opacity: '1',
+          },
+          "50%": {
+            left: '100%',
+            opacity: '0',
+          },
+          to: {
+            left: '100%',
+            opacity: '0',
+          },
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ matchUtilities, theme }) => {
+      matchUtilities(
+          {
+            'animation-delay': (value) => {
+              return {
+                'animation-delay': value,
+              }
+            },
+          },
+          {
+            values: theme('transitionDelay'),
+          }
+      )
+    }),
+  ],
 } satisfies Config;
