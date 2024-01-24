@@ -15,7 +15,7 @@ definePageMeta({
   <div class="flex flex-col h-screen justify-between">
     <div class="flex flex-center flex-col justify-center h-screen w-screen items-start">
       <div class="w-full h-2/4 bg-color-background z-0">
-        <div class="bg-color-text/20 blur-3xl w-96 h-60 rounded-full absolute left-[36%] top-80"></div>
+        <div class="bg-color-text/20 blur-3xl w-96 h-60 rounded-full absolute left-[36%] bottom-[40%]"></div>
         <div class="flex flex-col items-center w-full h-full justify-end">
           <InputInscription />
           <div class="w-80 h-auto flex items-center justify-center mt-10 mb-10">

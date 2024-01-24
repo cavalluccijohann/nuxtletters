@@ -10,6 +10,12 @@ export default defineNuxtConfig({
     storageKey: "nuxt-starter-color-mode",
   },
 
+  runtimeConfig: {
+    private: {
+      resendApiKey: process.env.RESEND_API_KEY,
+    },
+  },
+
   googleFonts: {
     families: {
       "Montserrat+Alternates": [400, 500, 600, 700, 800, 900],
