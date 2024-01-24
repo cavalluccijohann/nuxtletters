@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     private: {
       resendApiKey: process.env.RESEND_API_KEY,
+      resendAudienceId: process.env.RESEND_AUDIENCE_ID
     },
   },
 
