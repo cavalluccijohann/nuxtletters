@@ -1,6 +1,6 @@
-![image](public/project-preview.png)
 
-It's a minimal starter for Nuxt 3 and start building your next web application simply and quickly. Including :
+
+Your Newsletter Simplified - With Resend, Audience Management, and Newsletter Display 😊
 - [Tailwind CSS](https://tailwindcss.com/)
 - Color mode (dark & light)
 
