@@ -1,90 +1,47 @@
 
+![preview.png](..%2FDownloads%2Fpreview.png)
 
-Your Newsletter Simplified - With Resend, Audience Management, and Newsletter Display 😊
+Your Newsletter Simplified - With Resend, Newsletter subscribe & Contact Form 😊
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Resend](https://resend.com/)
 - Color mode (dark & light)
 
+---
 
 ## Quick Setup
 
---- 
+Create a .env file and add the environment variables that you can find in the .env.example file.
 
-To get started, follow these steps:
-
-
+1. Clone this repository if you have access or download it from the store
 ```bash
-# npm
-npm install
+git clone git@github.com:cavalluccijohann/nuxtletters.git
+```
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
+2. Install dependencies
+```bash
 bun install
 ```
 
-## Development Server
-
----
-
-Start the development server on `http://localhost:3000`:
-
+3. Start development server
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+bun dev
 ```
 
-## Production
-
----
-
-Build the application for production:
-
+4. Generate static project
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+bun generate
 ```
 
-Locally preview production build:
-
+5. Start production server
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+bun start
 ```
 
-## Author
-
 ---
+## Credits
 
-- [Johann Cavallucci]('https://github.com/cavalluccijohann')
-
+- [Johann Cavallucci](https://github.com/cavalluccijohann) - Creator and maintainer
+- [Nuxt](https://nuxt.com) - Framework
+- [Nuxt Content](https://content.nuxt.com) - Content management
+- [Tailwindcss](https://tailwindcss.com) - CSS framework
+- [Resend](https://resend.dev) - Email

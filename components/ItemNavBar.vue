@@ -39,7 +39,6 @@ defineProps({
       "
       />
       <span v-if="$route.path === item.path">{{ item.name }}</span>
-
     </NuxtLink>
   </div>
 </template>
