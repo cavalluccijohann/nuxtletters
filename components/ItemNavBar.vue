@@ -20,7 +20,7 @@ defineProps({
       class="flex items-center justify-center cursor-pointer montserrat"
       :class="[
         $route.path === item.path
-          ? 'bg-color-text backdrop-blur-md text-color-background font-bold pt-3 pb-3 pl-4 pr-4 rounded-full card'
+          ? 'bg-color-text/90 backdrop-blur-md text-color-background font-bold pt-3 pb-3 pl-4 pr-4 rounded-full card'
           : 'bg-color-text/50 text-color-background font-medium p-3 rounded-full',
       ]"
       :aria-label="'Go to ' + item.path + ' profile'"

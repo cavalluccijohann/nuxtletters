@@ -36,7 +36,7 @@ async function sendForm() {
 
         <div class="flex flex-col items-center w-full h-full justify-end">
           <h2 class="montserrat text-5xl text-color-text/50 pb-12">
-            Subscrib to my newsletter
+            Subscribe to my newsletter
           </h2>
           <InputInscription />
           <div class="w-80 h-auto flex items-center justify-center mt-10 mb-10">
@@ -107,9 +107,9 @@ async function sendForm() {
             <div class="relative w-full flex flex-col justify-center items-center">
               <button
                   type="submit"
-                  class="relative transition-all duration-300 my-1 w-1/2 p-2 rounded-lg bg-color-text/50 hover:bg-color-text/40 text-white hover:text-white/80 font-bold hover:bg-primary-color/50 focus:outline-none focus:bg-primary-color flex items-center justify-center"
+                  class="relative transition-all duration-300 my-1 w-1/2 p-2 rounded-lg bg-color-text/50 hover:bg-color-text/40 text-color-background hover:text-color-text/50 font-bold hover:bg-primary-color/50 focus:outline-none focus:bg-primary-color flex items-center justify-center"
               >
-                <component :is="PaperAirplaneIcon" class="w-5 h-5 text-color-text mr-2" />
+                <component :is="PaperAirplaneIcon" class="w-5 h-5 mr-2" />
                 Send
               </button>
             </div>

@@ -19,6 +19,7 @@ function sendMailUser() {
   if (emailRegex.test(email.value)) {
     fetchEmail();
   }
+  email.value = "";
 }
 
 </script>
@@ -38,9 +39,12 @@ function sendMailUser() {
       <div class="w-32 h-full pl-2">
         <button
             @click="sendMailUser()"
-            class="w-full h-full rounded-lg bg-color-text/50 text-color-text font-bold hover:bg-color-text/10 transition-all duration-300 focus:outline-none focus:bg-color-text/10 montserrat"
+            class="w-full h-full rounded-lg bg-color-text/50 text-color-background hover:text-color-text/50 font-bold hover:bg-color-text/10 transition-all duration-300 focus:outline-none focus:bg-color-text/10 montserrat"
         >
-          S'abonner
+          <p class="">
+            Subscribe
+          </p>
+
         </button>
       </div>
     </div>
