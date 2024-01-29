@@ -4,11 +4,9 @@ import { MagnifyingGlassIcon} from "@heroicons/vue/24/solid";
 
 definePageMeta({
   title: "Home",
-  name: "Home",
-  path: "/",
-  description: "Home page",
-  keywords: "Home",
+
 });
+
 </script>
 
 <template>
@@ -56,6 +54,12 @@ definePageMeta({
             </select>
           </div>
 
+        </div>
+
+        <div>
+          <h2 class="montserrat text-xl text-center text-color-text">
+            Nos dernières Newsletters
+          </h2>
         </div>
 
         <div class="w-full h-auto flex flex-row items-center justify-between mt-10 mb-10">

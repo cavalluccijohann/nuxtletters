@@ -19,26 +19,26 @@ defineProps({
       :to="item.path"
       class="flex items-center justify-center cursor-pointer montserrat"
       :class="[
-        $route.name === item.name
+        $route.path === item.path
           ? 'bg-color-text backdrop-blur-md text-color-background font-bold pt-3 pb-3 pl-4 pr-4 rounded-full card'
           : 'bg-color-text/50 text-color-background font-medium p-3 rounded-full',
       ]"
-      :aria-label="'Go to ' + item.name + ' profile'"
+      :aria-label="'Go to ' + item.path + ' profile'"
     >
       <component
         :is="item.icon"
         class="w-5 h-5 transition-all duration-300 text-neutral-color"
         :fontControlled="false"
-        :alt="item.name + ' logo'"
-        :aria-label="item.name + ' logo'"
+        :alt="item.path + ' logo'"
+        :aria-label="item.path + ' logo'"
         :class="[
-        $route.name === item.name
+        $route.path === item.path
           ? 'mr-1'
           : '',
       ]
       "
       />
-      <span v-if="$route.name === item.name">{{ item.name }}</span>
+      <span v-if="$route.path === item.path">{{ item.name }}</span>
 
     </NuxtLink>
   </div>

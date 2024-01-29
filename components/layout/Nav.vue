@@ -3,8 +3,8 @@ import { HomeIcon, NewspaperIcon, PaperAirplaneIcon} from "@heroicons/vue/24/sol
 
 const items = [
   {
-    name: "Article",
-    path: "/",
+    name: "Archive",
+    path: "/archive",
     icon: NewspaperIcon,
   },
   {
@@ -13,8 +13,8 @@ const items = [
     icon: HomeIcon,
   },
   {
-    name: "Send",
-    path: "/",
+    name: "Contact",
+    path: "/contact",
     icon: PaperAirplaneIcon,
   },
 ];
