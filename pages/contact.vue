@@ -15,16 +15,8 @@ const form = ref({
 });
 
 async function sendForm() {
-  await useFetch("/api/sendEmail", {
-    method: "POST",
-    body: form.value,
-  });
-  form.value = {
-    name: "",
-    phone: "",
-    email: "",
-    message: "",
-  };
+  console.log(form.value);
+
 }
 </script>
 
@@ -32,9 +24,8 @@ async function sendForm() {
   <div class="flex flex-col h-screen mt-28">
 
     <div>
-      <h2 class="montserrat p-5 font-bold text-5xl text-color-text text-center">Contact Me</h2>
+      <h2 class="montserrat text-5xl text-color-text/50 p-5 text-center">Contact Me</h2>
     </div>
-
 
     <form class="w-full flex flex-col justify-center items-center mt-5" @submit.prevent="sendForm()">
 
@@ -43,6 +34,7 @@ async function sendForm() {
             type="text"
             placeholder="full name"
             v-model="form.name"
+            required
             class="relative my-1 w-1/2 p-2 pl-10 text-neutral-color/60 m-4 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
         />
         <span class="w-1/2 absolute inset-y-0 start-50 flex items-center pointer-events-none px-2.5">
@@ -52,8 +44,9 @@ async function sendForm() {
 
       <div class="relative w-full flex flex-col justify-center items-center">
         <input
-            type="text"
+            type="email"
             placeholder="your email"
+            required
             v-model="form.email"
             class="relative my-1 w-1/2 p-2 pl-10 text-neutral-color/60 m-4 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
         />
@@ -64,7 +57,7 @@ async function sendForm() {
 
       <div class="relative w-full flex flex-col justify-center items-center">
         <input
-            type="text"
+            type="tel"
             placeholder="your phone number"
             v-model="form.phone"
             class="relative my-1 w-1/2 p-2 pl-10 text-neutral-color/60 m-4 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
@@ -79,6 +72,7 @@ async function sendForm() {
             type="text"
             placeholder="your message"
             v-model="form.message"
+            required
             class="relative my-1 w-1/2 p-2 h-32 text-neutral-color/60 m-4 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
         />
 

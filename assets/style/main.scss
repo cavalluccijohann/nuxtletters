@@ -28,3 +28,7 @@ html.dark {
 .montserrat {
     font-family: 'Montserrat Alternates';
 }
+
+.input-ui {
+  @apply bg-color-text/5 text-color-text/50 focus:text-color-text/60 rounded-lg border-[1px] border-color-text/10 focus:outline-none focus:ring-2 focus:bg-color-text/10 focus:ring-color-text/20 focus:border-transparent placeholder-color-text/50 focus:placeholder-color-text/60
+}
