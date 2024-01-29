@@ -1,5 +1,4 @@
-
-![preview.png](..%2FDownloads%2Fpreview.png)
+![preview.png](assets%2Fpreview.png)
 
 Your Newsletter Simplified - With Resend, Newsletter subscribe & Contact Form 😊
 - [Tailwind CSS](https://tailwindcss.com/)
