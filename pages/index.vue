@@ -90,22 +90,22 @@ async function sendForm() {
           </span>
           </div>
           <div class="relative w-full flex flex-col justify-center items-center">
-          <textarea
-              type="text"
-              required
-              placeholder="your message"
-              v-model="form.message"
-              class="relative my-1 w-1/2 p-2 pl-5 m-4 input-ui min-h-24"
-          />
-            <div class="relative w-full flex flex-col justify-center items-center">
-              <button
-                  type="submit"
-                  class="relative transition-all duration-300 my-1 w-1/2 p-2 rounded-lg bg-color-text/50 hover:bg-color-text/40 text-color-background hover:text-color-text/50 font-bold hover:bg-primary-color/50 focus:outline-none focus:bg-primary-color flex items-center justify-center"
-              >
-                <component :is="PaperAirplaneIcon" class="w-5 h-5 mr-2" />
-                Send
-              </button>
-            </div>
+            <textarea
+                type="text"
+                required
+                placeholder="your message"
+                v-model="form.message"
+                class="relative my-1 w-1/2 p-2 pl-5 m-4 input-ui min-h-24"
+            />
+          </div>
+          <div class="relative w-full flex flex-col justify-center items-center">
+            <button
+                type="submit"
+                class="relative transition-all duration-300 my-1 w-1/2 p-2 rounded-lg bg-color-text/50 hover:bg-color-text/40 text-color-background hover:text-color-text/50 font-bold hover:bg-primary-color/50 focus:outline-none focus:bg-primary-color flex items-center justify-center"
+            >
+              <component :is="PaperAirplaneIcon" class="w-5 h-5 mr-2" />
+              Send
+            </button>
           </div>
         </form>
       </div>
