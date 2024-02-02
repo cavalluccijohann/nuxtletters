@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import IconGithub from '/assets/logo/github.svg'
+import IconInstagram from '/assets/logo/instagram.svg'
+import IconInformation from '/assets/logo/info.svg'
 
 </script>
 
@@ -16,13 +19,13 @@
         </p>
         <div class="w-auto h-4 flex justify-between items-center">
           <a class="w-4 h-4 mr-3" href="https://github.com/cavalluccijohann" target="_blanck">
-            <img src="../../assets/logo/github.svg" alt="logo" class="w-full h-full" />
+            <IconGithub class="w-full h-full text-gray-500 dark:text-gray-400" />
           </a>
-          <a class="w-5 h-5 mr-3" href="https://www.instagram.com/johann.cvl" target="_blanck">
-            <img src="../../assets/logo/instagram.svg" alt="logo" class="w-full h-full" />
+          <a class="w-4 h-4 mr-3" href="https://www.instagram.com/johann.cvl" target="_blanck">
+            <IconInstagram class="w-full h-full text-gray-500 dark:text-gray-400" />
           </a>
-          <a class="w-5 h-5" href="https://bento.me/johanncvl" target="_blanck">
-            <img src="../../assets/logo/info.svg" alt="logo" class="w-full h-full" />
+          <a class="w-4 h-4" href="https://bento.me/johanncvl" target="_blanck">
+            <IconInformation class="w-full h-full " />
           </a>
           <div class="w-[0.5px] h-4 bg-color-primary mx-3"></div>
           <ThemeSelector />
